@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title font="color:#ADEFD1FF">About Us - Planificador</title> 
+{% endblock title %}
+<h1 style="color:blue;">This is a heading</h1>
+{% block content %}
+
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src="{% static 'image/stickynotes1.png' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="280">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'image/stickynotes2.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="280">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'image/stickynotes.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="280">
+            </div>
+        </div> 
+        
+        <div class="col-md-10 offset-md-1">
+    
+            <center><p style= "color:#23395d" class="h4 mt-3">"Making a Plan without the right tool is like making Spaghetti without a pot"</p></center>
+            <center><p style= "color:#1f3a4c" class="h3">- Planificador Lets You Keep Track Of  All Your Tasks In One Place.</p></center>
+        
+            
+        </div>    
+{% endblock content %}

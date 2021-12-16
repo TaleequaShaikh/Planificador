@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Welcome to Planificador!</title> 
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src="{% static 'image/login.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="280">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'image/Planificador.png' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="280">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'image/register.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="280">
+            </div>
+        </div>
+        <div class="col-md-10 offset-md-1">
+                <center><p style= "color:#4C1C7E" class="h1">Welcome to Planificador!</p></center>
+                <center><p style= "color:#81007F" class="h2 mt-3">"Plan You're Execution, Execute You're Plan with us"</p></center>
+                
+
+                <center><a href="{% url 'todolist' %}"><button style="background-color: #C28BCE" type="button" class="btn btn-primary btn-lg mt-3 shadow">Let's Get Started</button></a></center>
+            </div>
+        </div>
+    </div>
+         
+{% endblock content %}

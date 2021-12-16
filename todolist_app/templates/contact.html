@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title %}
+<title>Contact Us - Planificador</title> 
+{% endblock title %}
+
+{% block content %}
+<section class="mb-4">
+    <h2 class="h1-responsive font-weight-bold text-center mt-4">Get in Touch With Us</h2>
+
+
+    <center><p class="h2 mt-3">For any enquiries, Please Contact Us Using below email address</p></center>
+    <center><h2 class="h1-responsive font-weight-bold text-center mt-4">email: Planificador@email.com</h2></center>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src="{% static 'image/notes1.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="250">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'image/stickynotes4.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="250">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'image/notes2.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" width="350" height="250">
+            </div>
+        </div>           
+
+    
+      
+      
+
+{% endblock content %}
